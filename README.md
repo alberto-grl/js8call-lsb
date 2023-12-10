@@ -1,13 +1,12 @@
 # js8call-lsb
 
-! Alberto Garlassi I4NZX December 2023
-! This code allows to receive the JS8 subband in LSB mode instead of USB.
-! Receiver should be tuned + 3 kHz from usual, eg. 7081 kHz for 40 m.
-! It's real use is for DSB receivers like ADX. Unfortunately an ADX tuned at 7078
-! for normal USB decoding also feeds JS8CALL with the mirrored FT8 subband, which starts at 7074.
-! Tuning 3 kHz up may bring in SSB traffic, but the power spectrum there is usually way less hot then for FT8
-!
-! The RECEIVE_LSB directive is located in src/lib/js8/js8_params.f90
+Alberto Garlassi I4NZX December 2023
+This code allows to receive the JS8 subband in LSB mode instead of USB.
+Receiver should be tuned + 3 kHz from usual, eg. 7081 kHz for 40 m.
+It's real use is for DSB receivers like ADX. Unfortunately an ADX tuned at 7078
+for normal USB decoding also feeds JS8CALL with the mirrored FT8 subband, which starts at 7074.
+Tuning 3 kHz up may bring in SSB traffic, but the power spectrum there is usually way less hot then for FT8
+The RECEIVE_LSB directive is located in src/lib/js8/js8_params.f90
 
 This code works only for reception. Transmission is standard USB and RIT should be set at +3kHz.
 In other words: if you just want to check RX tune +3, for transmitting check if your RIT
