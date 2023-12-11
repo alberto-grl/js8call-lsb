@@ -19,11 +19,12 @@ of JS8Call could be used.
 The code for JS8Call was cloned on December 10, 2023 from the official BitBucket repo
 https://bitbucket.org/widefido/js8call/src/js8call/
 
-Only two files were changed:
+Only three files were changed:
 src/lib/js8/js8_params.f90
 src/lib/decoder.f90
+src/lib/symspec.f90
 
-Download the original 2.2.1-devel code, substitute the two files, follow the build instructions.
+Download the original 2.2.1-devel code, substitute the three files, follow the build instructions.
 Tested on XUbuntu only.
 
 If someone finds this code useful, please commit it to the main repo, maybe one day there will be a new JS8Call release.
